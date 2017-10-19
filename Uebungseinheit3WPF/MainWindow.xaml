@@ -7,6 +7,98 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Eingabe">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="5*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Content="Vorname" VerticalAlignment="Center"></Label>
+                        <Label Grid.Column="0" Grid.Row="1" Content="Nachname" VerticalAlignment="Center"></Label>
+                        <Label Grid.Column="0" Grid.Row="2" Content="Alter" VerticalAlignment="Center"></Label>
+                        <Label Grid.Column="0" Grid.Row="3" Content="Studiengang" VerticalAlignment="Center"></Label>
+                        <Label Grid.Column="0" Grid.Row="4" Content="Bezahlt" VerticalAlignment="Center"></Label>
+                        <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center"></TextBox>
+                        <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"></TextBox>
+                        <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"></TextBox>
+                        <ComboBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"></ComboBox>
+                        <CheckBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+                        <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Content="Speichern"></Button>
+
+                        
+                        
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <DataGrid></DataGrid>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0" Content="Ändern"></Button>
+                            <Button Grid.Column="1" Content="Löschen"></Button>
+
+                        </Grid>
+
+
+                    </Grid>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Stammdaten">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="13*"/>
+                            <RowDefinition Height="13*"/>
+                            <RowDefinition Height="85*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox Grid.Row="0"></TextBox>
+                        <Button Grid.Row="1" Content="Speichern"></Button>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <TextBlock></TextBlock>
+                    </Grid>
+
+
+
+                </Grid>
+ 
+            </TabItem>
+
+        </TabControl>
+
+
+
     </Grid>
 </Window>
